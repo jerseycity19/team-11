@@ -15,7 +15,7 @@ router.post("/survey", async(req, res) => {
     let status = req.body.status_field;
     let discipline = req.body.discipline_field;
     let sensitivity = req.body.sensitivity_field;
-
+    
     // error checking to make sure the input values are correct
 
     result = await userData.create(iden, age, country, language, status, discipline, sensitivity);
