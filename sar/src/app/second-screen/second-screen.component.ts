@@ -26,6 +26,11 @@ export class SecondScreenComponent implements OnInit {
   constructor(http: HttpClientModule) { }
 
   onClick() {
+    document.getElementsByClassName("container")[0].scrollTo({
+      top: document.getElementsByClassName("container")[0].scrollTop + screen.height,
+      behavior: 'smooth'
+    });
+    console.log("hello");
   }
 
   ngOnInit() {

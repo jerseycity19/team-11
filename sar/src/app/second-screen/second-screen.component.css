@@ -1,11 +1,15 @@
+html {
+  scroll-behavior: smooth;
+}
+
 .container {
   scroll-snap-type: y mandatory;
-  overflow-y: scroll;
   height: 100vh;
+  overflow: auto;
 }
 
 .container .form-screen {
   scroll-snap-align: start;
-  height: 100vh;
-  padding-top: 5vh;
+  padding-top: 5%;
+  height: 95vh;
 }

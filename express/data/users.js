@@ -5,7 +5,7 @@ const createCsvWriter = require('csv-writer').createObjectCsvWriter;
 const execa = require('execa');
 // var PythonShell = require('python-shell');
 module.exports = {
-    create: async function(identify,age,gender, country, language, status, discipline, sensitive){
+    create: async function(identify,age,gender, country, language, status, discipline, sensitive, often, aware, advised, primary, experienced, retaliation, compared){
         const userCollection = await users();
 
         /// create new user object to add to db.
@@ -17,7 +17,14 @@ module.exports = {
             language: language,
             status: status,
             discipline: discipline,
-            sensitivity: sensitive
+            sensitivity: sensitive,
+            often: often,
+            aware: aware,
+            advised: advised,
+            primary: primary,
+            experienced: experienced,
+            retaliation: retaliation,
+            compared: compared
         }
 
         const insertInfo = await userCollection.insertOne(newUser);
@@ -44,7 +51,14 @@ module.exports = {
                    {id: 'language', title: 'LANGUAGE'},
                    {id: 'status', title: 'STATUS'},
                    {id: 'discipline', title: 'DISCIPLINE'},
-                   {id: 'sensitivity', title: 'SENSITIVE'}
+                   {id: 'sensitivity', title: 'SENSITIVE'},
+                   {id: 'often', title: 'OFTEN'},
+                   {id: 'aware', title: 'AWARE'},
+                   {id: 'advised', title: 'ADVISED'},
+                   {id: 'primary', title: 'PRIMARY'},
+                   {id: 'experienced', title: 'EXPERIENCED'},
+                   {id: 'retaliation', title: 'RETALIATION'},
+                   {id: 'compared', title: 'COMPARED'}
                ]
             });
             csvWriter.writeRecords(allUsers).then(() =>  {

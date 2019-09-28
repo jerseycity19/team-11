@@ -12,5 +12,5 @@ path_to_csv = "{}/test.csv".format(path_to_express)
 df = pd.read_csv(str(path_of_csv))
 
 count = df[attr].value_counts().plot(kind='bar')
-
+plt.title(attr.capitalize())
 plt.savefig(attr.lower() + "-barchart.png", bbox_inches="tight")
