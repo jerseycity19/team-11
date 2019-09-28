@@ -52,7 +52,7 @@ export class SecondScreenComponent implements OnInit {
 
     var res = new UserResponse(userIdentification.value, ageRange.value, country.value, primaryLang.value, employmentStatus.value, disciplineArea.value, sensitivity.value);
 
-    this.userResService.submitUserResponse(res);
+    this.userResService.submitUserResponse(res).subscribe(resFromSubmit => console.log(resFromSubmit));
 
 
     // alert(ageRange.value);

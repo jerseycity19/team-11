@@ -28,7 +28,7 @@ export class UserResponseService {
     var url = 'api/firstScreen';
     // alert("submitting user response");
 
-    return this.http.post<UserResponse>(url, userResponse, httpOptions).pipe(
+    return this.http.get<UserResponse>(url, userResponse).pipe(
       // catchError(this.handleError('submitUserResponse', userResponse))
     );
     // <UserResponse>(url, userResponse);
