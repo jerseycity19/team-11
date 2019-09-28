@@ -10,7 +10,7 @@ import { ForthScreenComponent } from './forth-screen/forth-screen.component';
 @NgModule({
   declarations: [
     AppComponent,
-    FirstScreenComponent
+    FirstScreenComponent,
     ThirdScreenComponent,
     ForthScreenComponent
   ],
