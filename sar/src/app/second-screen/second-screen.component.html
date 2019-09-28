@@ -6,26 +6,26 @@
     <h6>
       <form novalidate class="simple-form">
       	  User Identification:
-      	  <select class="form-group col-md-2"> ng-model="myVar">
-      	  	<option value="scholar">Scholar
+      	  <select id="userIdentification" class="form-group col-md-2"> ng-model="myVar">
+      	  	    <option value="scholar">Scholar
       	  		<option value="student">Student
-      	  			<option value="admin">Administrator
-      	  				<option value="nonuni">Non-University
+      	  		<option value="admin">Administrator
+      	  		<option value="nonuni">Non-University
       	  	</select><br>
 
       	  Age Range
-      	  <select class="form-group col-md-2"> ng-model="myVar">
-      	  	<option value="range1">20-29
+      	  <select id="ageRange" class="form-group col-md-2"> ng-model="myVar">
+      	  	    <option value="range1">20-29
       	  		<option value="range2">30-39
-      	  			<option value="range3">40-49
-      	  				<option value="range4">50-59
-      	  					<option value="range5">60-69
-      	  						<option value="range6">70+
+      	  		<option value="range3">40-49
+      	  	    <option value="range4">50-59
+      	  		<option value="range5">60-69
+      	  		<option value="range6">70+
       	  	</select><br>
 
       	  	Country:
-      	  	<select class="form-group col-md-2"> ng-model="myVar">
-      	  	<option value="Afghanistan">Afghanistan</option>
+      	  	<select id="country" class="form-group col-md-2"> ng-model="myVar">
+      	  	        <option value="Afghanistan">Afghanistan</option>
                     <option value="Åland Islands">Åland Islands</option>
                     <option value="Albania">Albania</option>
                     <option value="Algeria">Algeria</option>
@@ -272,7 +272,7 @@
                 </select><br>
 
       	  	Primary Professional Language:
-      	  	<select class="form-group col-md-2"> ng-model="myVar">
+      	  	<select id="primaryLang" class="form-group col-md-2"> ng-model="myVar">
       	  	  <option value="AF">Afrikanns</option>
     		  <option value="SQ">Albanian</option>
     		  <option value="AR">Arabic</option>
@@ -347,30 +347,30 @@
     		  <option value="XH">Xhosa</option>
       </select><br>
 
-      	  Employment Status
-      	  <select class="form-group col-md-2"> ng-model="myVar">
-      	  	<option value="tenure">Tenure or other permanent appointment
-      	  		<option value="ft">Full-Time time limited contract
-      	  			<option value="pt">Part-time or adjunct
-      	  				<option value="ne">Not employed
-      	  	</select><br>
+      	Employment Status
+      	<select id="employmentStatus" class="form-group col-md-2"> ng-model="myVar">
+      	    <option value="tenure">Tenure or other permanent appointment
+      	    <option value="ft">Full-Time time limited contract
+      	  	<option value="pt">Part-time or adjunct
+      	  	<option value="ne">Not employed
+      	</select><br>
 
       	  Discipline Area
-      	  <select class="form-group col-md-2"> ng-model="myVar">
-      	  	<option value="sci">Natural Sciences
-      	  		<option value="soc">Social Sciences
-      	  			<option value="art">Arts & Humanities
-      	  				<option value="eng">Engineering
-      	  					<option value="cs">Computer Science
-      	  						<option value="med">Medicine
-      	  							<option value="fin">Business/Finance
-      	  								<option value="rights">Law/Human rights
-      	  									<option value="other">Other
+      	  <select id="disciplineArea" class="form-group col-md-2"> ng-model="myVar">
+      	    <option value="sci">Natural Sciences
+      		<option value="soc">Social Sciences
+      	  	<option value="art">Arts & Humanities
+      	  	<option value="eng">Engineering
+      	  	<option value="cs">Computer Science
+      	  	<option value="med">Medicine
+      	  	<option value="fin">Business/Finance
+      	  	<option value="rights">Law/Human rights
+      	  	<option value="other">Other
       	  	</select><br>
 
 
       	  How sensitive is your work?
-      	  <select class="form-group col-md-2"> ng-model="myVar">
+      	  <select id="sensitivity" class="form-group col-md-2"> ng-model="myVar">
       	  	<option value="not">Not very sensitive
       	  		<option value="somewhat">Somewhat Sensitive
       	  			<option value="more">More Sensitive than most
@@ -545,7 +545,7 @@
 
   <div class="form-screen" id="screen-11">
     <p>SUBMIT INFORMATION Anonymously:</p>
-    <button type="button" class="btn btn-secondary" name="button">Submit</button>
+    <button (click)="onClickSubmit()" type="button" class="btn btn-secondary" name="button">Submit</button>
   </div>
 
 </div>
