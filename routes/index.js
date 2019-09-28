@@ -1,10 +1,10 @@
 const firstScreen = require("./firstScreen");
-const secondScreen = require("./sndScreen");
+const secondScreen = require("./secondScreen");
 const thirdScreen = require("./thirdScren");
 
 const constructorMethod = app => {
     app.use("/firstScreen", firstScreen);
-    app.use("/sndScreen", secondScreen);
+    app.use("/secondScreen", secondScreen);
     app.use("./thirdScreen", thirdScreen);
 
     app.use("*", (req, res) =>{

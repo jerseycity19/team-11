@@ -1,5 +1,5 @@
 const express = require("express");
-const express = require("body-parser");
+const bodyParser = require("body-parser");
 const app = express();
 const configRoutes = require("./routes");
 
