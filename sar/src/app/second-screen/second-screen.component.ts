@@ -13,7 +13,11 @@ export class SecondScreenComponent implements OnInit {
   // });
 
   onClick() {
-    alert("hello, world");
+    document.getElementsByClassName("container")[0].scrollTo({
+      top: document.getElementsByClassName("container")[0].scrollTop + screen.height,
+      behavior: 'smooth'
+    });
+    console.log("hello");
   }
 
   constructor() { }
