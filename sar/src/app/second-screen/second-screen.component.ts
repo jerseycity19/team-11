@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
+// import * as $ from 'jquery';
 
 @Component({
   selector: 'app-second-screen',
@@ -19,6 +20,7 @@ export class SecondScreenComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+
   }
 
 }
