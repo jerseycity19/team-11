@@ -10,6 +10,6 @@ html {
 
 .container .form-screen {
   scroll-snap-align: start;
-  padding-top: 5%;
+  padding-top: 15%;
   height: 95vh;
 }

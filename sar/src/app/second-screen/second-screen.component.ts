@@ -1,4 +1,5 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
+import $ from 'jquery';
 // import * as $ from 'jquery';
 
 @Component({
@@ -19,6 +20,16 @@ export class SecondScreenComponent implements OnInit {
       behavior: 'smooth'
     });
     console.log("hello");
+  }
+
+  scrollCallback() {
+    var docHeight = document.getElementsByClassName("container")[0].scrollHeight;
+    var curPos = document.getElementsByClassName("container")[0].scrollTop;
+    var percent = Math.floor((curPos / docHeight) * 100);
+    $(".progress-bar").text(percent + "%");
+    $(".progress-bar").css('width', percent + '%');
+    $(".progress-bar").attr("aria-valuenow", percent);
+
   }
 
   constructor() { }

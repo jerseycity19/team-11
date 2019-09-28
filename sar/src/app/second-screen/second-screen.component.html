@@ -1,4 +1,11 @@
-<div class="container">
+<div style="position:absolute; top:0px;width: 100%;">
+  <div class="progress" style="height: 30px;">
+    <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">0%</div>
+  </div>
+</div>
+
+<div class="container" (scroll)="scrollCallback()">
+
 
   <div class="" id="screen-2">
     <div ng-controller="ExampleController" class="form-screen">
