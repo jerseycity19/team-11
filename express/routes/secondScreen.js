@@ -8,7 +8,6 @@ router.get("/", async (req, res) =>{
 });
 
 router.post("/survey", async(req, res) => {
-    identify,age,gender, country, language, status, discipline, sensitive
     let iden = req.body.identify_field;
     let age = req.body.age_field;
     let country = req.body.country_field;
