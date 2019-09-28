@@ -4,7 +4,10 @@ const data = require("../data");
 const userData = data.users;
 
 router.get("/", async (req, res) =>{
-    result = await userData.create("test", "testage", "testgender", "testcountry", "testlanguage", "teststatus", "testdiscipline", "testsensitivity");
+    user1 = await userData.create("student", "20-29", "F", "South America", "Spanish", "part-time contract", "law", "somewhat sensitive")
+    user2 = await userData.create("scholar","30-39", "M","Middle East", "Arabic", "adjunct", "natural science", "more sensitive than most")
+    user3 = await userData.create("student","20-29", "F","Central Asia", "Chinese", "part-time no contract", "human rights", "extremely sensitive")
+    user4 = await userData.create("administrator", "40-49", "M", "North Africa", "Arabic","tenure", "social sciences", "somewhat sensitive")
     console.log("Created");
 });
 
