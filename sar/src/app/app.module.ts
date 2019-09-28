@@ -5,12 +5,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ThirdScreenComponent } from './third-screen/third-screen.component';
 import { ForthScreenComponent } from './forth-screen/forth-screen.component';
+import { FifthScreenComponent } from './fifth-screen/fifth-screen.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ThirdScreenComponent,
-    ForthScreenComponent
+    ForthScreenComponent,
+    FifthScreenComponent
   ],
   imports: [
     BrowserModule,
