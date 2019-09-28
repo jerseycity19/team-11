@@ -1,6 +1,6 @@
 <div class="container">
 
-  <div class="form-screen" id="screen-2">
+  <div class="" id="screen-2">
     <div ng-controller="ExampleController" class="form-screen">
     <!-- form begins -->
     <h6>
@@ -379,7 +379,7 @@
       </form>
       </h6>
     <!-- form ends -->
-    <button type="button" class="btn btn-secondary">Next</button>
+    <button type="button" (click)="onClick()" class="btn btn-secondary">Next</button>
   </div>
 
   <div class="form-screen" id="screen-3">
@@ -389,7 +389,7 @@
       losing job or promotion), legal (e.g. prosecution or fine), or violent retaliation (e.g. harassment,
       assault), whether from state or non-state sources, against yourself or others (e.g. family members).
     </p>
-    <button type="button" class="btn btn-secondary" name="button">Next</button>
+    <button type="button" (click)="onClick()" class="btn btn-secondary" name="button">Next</button>
   </div>
 
   <div class="form-screen" id="screen-4">
