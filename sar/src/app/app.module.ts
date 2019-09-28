@@ -9,6 +9,7 @@ import { AppComponent } from './app.component';
 import { FirstScreenComponent } from './first-screen/first-screen.component';
 import { SecondScreenComponent } from './second-screen/second-screen.component';
 import { ThirdScreenComponent } from './third-screen/third-screen.component';
+import { UserResponseService } from './services/user-response.service';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,9 @@ import { ThirdScreenComponent } from './third-screen/third-screen.component';
     HttpClientModule,
     NgbModule
   ],
-  providers: [],
+  providers: [
+    UserResponseService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,7 +1,6 @@
-import { Component, OnInit, ViewChild } from '@angular/core';
-import { HttpClientModule, HttpHeaders } from '@angular/common/http';
-import { UserResponse } from '../user-response';
-// import * as $ from 'jquery';
+import { Component, OnInit } from '@angular/core';
+import { UserResponse } from '../models/user-response';
+import { UserResponseService } from '../services/user-response.service';
 
 @Component({
   selector: 'app-second-screen',
@@ -9,12 +8,12 @@ import { UserResponse } from '../user-response';
   styleUrls: ['./second-screen.component.css']
 })
 
-const httpOptions = {
-  headers: new HttpHeaders({
-    'Content-Type': 'application/json',
-    'Authorization': 'my-auth-token'
-  })
-};
+// const httpOptions = {
+//   headers: new HttpHeaders({
+//     'Content-Type': 'application/json',
+//     'Authorization': 'my-auth-token'
+//   })
+// };
 
 export class SecondScreenComponent implements OnInit {
 
@@ -23,7 +22,9 @@ export class SecondScreenComponent implements OnInit {
   //   alert("Hello, World!");
   // });
 
-  constructor(http: HttpClientModule) { }
+  constructor(
+    public userResService: UserResponseService
+  ) {  }
 
   onClick() {
     document.getElementsByClassName("container")[0].scrollTo({
@@ -41,7 +42,7 @@ export class SecondScreenComponent implements OnInit {
 
     var url = 'api/firstScreen';
 
-    var userIdentification = <HTMLSelectElement>document.getElementById("userIdentification"));
+    var userIdentification = <HTMLSelectElement>document.getElementById("userIdentification");
     var ageRange = <HTMLSelectElement>document.getElementById("ageRange");
     var country = <HTMLSelectElement>document.getElementById("country");
     var primaryLang = <HTMLSelectElement>document.getElementById("primaryLang");
@@ -51,7 +52,8 @@ export class SecondScreenComponent implements OnInit {
 
     var res = new UserResponse(userIdentification.value, ageRange.value, country.value, primaryLang.value, employmentStatus.value, disciplineArea.value, sensitivity.value);
 
-    return this.http.post<UserResponse>(url, res);
+    this.userResService.submitUserResponse(res);
+
 
     // alert(ageRange.value);
   }

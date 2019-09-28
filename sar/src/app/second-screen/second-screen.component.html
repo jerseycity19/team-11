@@ -368,6 +368,18 @@
       	  	<option value="other">Other
       	  	</select><br>
 
+        <!-- Discipline Area
+        <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                Dropdown button
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href>Natrual Sciences</a>
+                <a class="dropdown-item">Engineering</a>
+                <a class="dropdown-item">Computer Science</a>
+            </div>
+        </div> -->
 
       	  How sensitive is your work?
       	  <select id="sensitivity" class="form-group col-md-2"> ng-model="myVar">
@@ -379,7 +391,7 @@
       </form>
       </h6>
     <!-- form ends -->
-    <button type="button" (click)="onClick()" class="btn btn-secondary">Next</button>
+    <button type="button" (click)="onClick()" class="btn btn-secondary btn-danger">Next</button>
   </div>
 
   <div class="form-screen" id="screen-3">
@@ -389,7 +401,7 @@
       losing job or promotion), legal (e.g. prosecution or fine), or violent retaliation (e.g. harassment,
       assault), whether from state or non-state sources, against yourself or others (e.g. family members).
     </p>
-    <button type="button" (click)="onClick()" class="btn btn-secondary" name="button">Next</button>
+    <button type="button" (click)="onClick()" class="btn btn-secondary btn-danger" name="button">Next</button>
   </div>
 
   <div class="form-screen" id="screen-4">
@@ -397,19 +409,19 @@
     because of fear of professional, legal or violent retaliation?</p>
     <div class="form-check form-check-inline">
     <input (click)="onClick()" class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-    <label class="form-check-label" for="inlineRadio1">Never</label>
+    <label (click)="onClick()" class="form-check-label" for="inlineRadio1">Never</label>
     </div>
     <div class="form-check form-check-inline">
     <input (click)="onClick()" class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-    <label class="form-check-label" for="inlineRadio2">Sometimes</label>
+    <label (click)="onClick()" class="form-check-label" for="inlineRadio2">Sometimes</label>
     </div>
     <div class="form-check form-check-inline">
     <input (click)="onClick()" class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
-    <label class="form-check-label" for="inlineRadio3">Frequently</label>
+    <label (click)="onClick()" class="form-check-label" for="inlineRadio3">Frequently</label>
     </div>
     <div class="form-check form-check-inline">
     <input (click)="onClick()" class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio4" value="option4">
-    <label class="form-check-label" for="inlineRadio4">All the time</label>
+    <label (click)="onClick()" class="form-check-label" for="inlineRadio4">All the time</label>
     </div>
   </div>
 
@@ -419,19 +431,19 @@
       or violent retaliation?</p>
     <div class="form-check form-check-inline">
       <input (click)="onClick()" class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-      <label class="form-check-label" for="inlineRadio1">None</label>
+      <label (click)="onClick()" class="form-check)" class="form-check-label" for="inlineRadio1">None</label>
     </div>
     <div class="form-check form-check-inline">
       <input (click)="onClick()" class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-      <label class="form-check-label" for="inlineRadio2">A few</label>
+      <label (click)="onClick()" class="form-check)" class="form-check)" class="form-check)" class="form-check)" class="form-check-label" for="inlineRadio2">A few</label>
     </div>
     <div class="form-check form-check-inline">
       <input (click)="onClick()" class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
-      <label class="form-check-label" for="inlineRadio3">A majority</label>
+      <label (click)="onClick()" class="form-check)" class="form-check-label" for="inlineRadio3">A majority</label>
     </div>
     <div class="form-check form-check-inline">
       <input (click)="onClick()" class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio4" value="option4">
-      <label class="form-check-label" for="inlineRadio4">Almost all</label>
+      <label (click)="onClick()" class="form-check)" class="form-check)" class="form-check)" class="form-check)" class="form-check-label" for="inlineRadio4">Almost all</label>
     </div>
   </div>
 
@@ -441,19 +453,19 @@
       of fear of professional, legal or violent retaliation?</p>
     <div class="form-check form-check-inline">
       <input (click)="onClick()" class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-      <label class="form-check-label" for="inlineRadio1">Never</label>
+      <label (click)="onClick()" class="form-check)" class="form-check)" class="form-check)" class="form-check)" class="form-check)" class="form-check)" class="form-check-label" for="inlineRadio1">Never</label>
     </div>
     <div class="form-check form-check-inline">
       <input (click)="onClick()" class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-      <label class="form-check-label" for="inlineRadio2">Sometimes</label>
+      <label (click)="onClick()" class="form-check-label" for="inlineRadio2">Sometimes</label>
     </div>
     <div class="form-check form-check-inline">
       <input (click)="onClick()" class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
-      <label class="form-check-label" for="inlineRadio3">Frequently</label>
+      <label (click)="onClick()" class="form-check)" class="form-check-label" for="inlineRadio3">Frequently</label>
     </div>
     <div class="form-check form-check-inline">
       <input (click)="onClick()" class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio4" value="option4">
-      <label class="form-check-label" for="inlineRadio4">All the time</label>
+      <label (click)="onClick()" class="form-check-label" for="inlineRadio4">All the time</label>
     </div>
   </div>
 
@@ -462,31 +474,31 @@
       to self-censor their professional expression (research, teaching/studies, publication, public expression)?</p>
     <div class="form-check form-check-inline">
       <input (click)="onClick()" class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-      <label class="form-check-label" for="inlineRadio1">Colleagues/Professional peers</label>
+      <label (click)="onClick()" class="form-check)" class="form-check-label" for="inlineRadio1">Colleagues/Professional peers</label>
     </div>
     <div class="form-check form-check-inline">
       <input (click)="onClick()" class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-      <label class="form-check-label" for="inlineRadio2">University/Employer</label>
+      <label (click)="onClick()" class="form-check-label" for="inlineRadio2">University/Employer</label>
     </div>
     <div class="form-check form-check-inline">
       <input (click)="onClick()" class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
-      <label class="form-check-label" for="inlineRadio3">Home country government</label>
+      <label (click)="onClick()" class="form-check-label" for="inlineRadio3">Home country government</label>
     </div>
     <div class="form-check form-check-inline">
       <input (click)="onClick()" class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio4" value="option4">
-      <label class="form-check-label" for="inlineRadio4">Foreign country government</label>
+      <label (click)="onClick()" class="form-check-label" for="inlineRadio4">Foreign country government</label>
     </div>
     <div class="form-check form-check-inline">
       <input (click)="onClick()" class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio4" value="option4">
-      <label class="form-check-label" for="inlineRadio5">Society/Public</label>
+      <label (click)="onClick()" class="form-check-label" for="inlineRadio5">Society/Public</label>
     </div>
     <div class="form-check form-check-inline">
       <input (click)="onClick()" class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio4" value="option4">
-      <label class="form-check-label" for="inlineRadio6">Not sure</label>
+      <label (click)="onClick()" class="form-check-label" for="inlineRadio6">Not sure</label>
     </div>
     <div class="form-check form-check-inline">
       <input (click)="onClick()" class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio4" value="option4">
-      <label class="form-check-label" for="inlineRadio7">No fear of consequences</label>
+      <label (click)="onClick()" class="form-check-label" for="inlineRadio7">No fear of consequences</label>
     </div>
   </div>
 
@@ -495,15 +507,15 @@
       for your professional expression (research, teaching/studies, publication, public expression)?</p>
     <div class="form-check form-check-inline">
       <input (click)="onClick()" class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-      <label class="form-check-label" for="inlineRadio1">Yes</label>
+      <label (click)="onClick()" class="form-check-label" for="inlineRadio1">Yes</label>
     </div>
     <div class="form-check form-check-inline">
       <input (click)="onClick()" class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-      <label class="form-check-label" for="inlineRadio2">No</label>
+      <label (click)="onClick()" class="form-check-label" for="inlineRadio2">No</label>
     </div>
     <div class="form-check form-check-inline">
       <input (click)="onClick()" class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
-      <label class="form-check-label" for="inlineRadio3">Not sure</label>
+      <label (click)="onClick()" class="form-check-label" for="inlineRadio3">Not sure</label>
     </div>
   </div>
 
@@ -513,15 +525,15 @@
       teaching/studies, publication, public expression)?</p>
     <div class="form-check form-check-inline">
       <input (click)="onClick()" class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-      <label class="form-check-label" for="inlineRadio1">Yes</label>
+      <label (click)="onClick()" class="form-check-label" for="inlineRadio1">Yes</label>
     </div>
     <div class="form-check form-check-inline">
       <input (click)="onClick()" class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-      <label class="form-check-label" for="inlineRadio2">No</label>
+      <label (click)="onClick()" class="form-check-label" for="inlineRadio2">No</label>
     </div>
     <div class="form-check form-check-inline">
       <input (click)="onClick()" class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
-      <label class="form-check-label" for="inlineRadio3">Not sure</label>
+      <label (click)="onClick()" class="form-check-label" for="inlineRadio3">Not sure</label>
     </div>
   </div>
 
@@ -531,21 +543,21 @@
       fear of professional, legal or violent retaliation?</p>
     <div class="form-check form-check-inline">
       <input (click)="onClick()" class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-      <label class="form-check-label" for="inlineRadio1">More likely</label>
+      <label (click)="onClick()" class="form-check-label" for="inlineRadio1">More likely</label>
     </div>
     <div class="form-check form-check-inline">
       <input (click)="onClick()" class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-      <label class="form-check-label" for="inlineRadio2">Less likely</label>
+      <label (click)="onClick()" class="form-check-label" for="inlineRadio2">Less likely</label>
     </div>
     <div class="form-check form-check-inline">
       <input (click)="onClick()" class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
-      <label class="form-check-label" for="inlineRadio3">About the same</label>
+      <label (click)="onClick()" class="form-check-label" for="inlineRadio3">About the same</label>
     </div>
   </div>
 
   <div class="form-screen" id="screen-11">
     <p>SUBMIT INFORMATION Anonymously:</p>
-    <button (click)="onClickSubmit()" type="button" class="btn btn-secondary" name="button">Submit</button>
+    <button (click)="onClickSubmit()" type="button" class="btn btn-secondary btn-danger" name="button">Submit</button>
   </div>
 
 </div>
