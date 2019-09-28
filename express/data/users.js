@@ -21,7 +21,12 @@ module.exports = {
 
         // const newId = insertInfo.insertedId;
         // const newtemp = await this.get(newId);
-        console.log(InsertInfo);
+        // console.log(insertInfo);
 
+    },
+    getAll: async function(){
+        const userCollection = await users();
+        const allUsers = await userCollection.find({}).toArray();
+        console.log(allUsers);
     }
 }
