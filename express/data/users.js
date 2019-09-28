@@ -7,20 +7,21 @@ module.exports = {
         const userCollection = await users();
 
         /// create new user object to add to db.
-        let temp = {
-            identification: "student",
-            age: 23,
-            country: "USA"
+        let newUser = {
+            identification: identify,
+            age: age,
+            country: country,
+            language: language,
+            status: status,
+            discipline: discipline,
+            sensitivity: sensitive
         }
 
-        const insertInfo = await userCollection.insertOne(temp);
+        const insertInfo = await userCollection.insertOne(newUser);
 
-        const newId = insertInfo.insertedId;
-        const newtemp = await this.get(newId);
-        console.log(newTemp);
-
-    },
-    get: async function(id){
+        // const newId = insertInfo.insertedId;
+        // const newtemp = await this.get(newId);
+        console.log(InsertInfo);
 
     }
 }
