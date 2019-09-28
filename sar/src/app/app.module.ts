@@ -6,7 +6,6 @@ import { AppComponent } from './app.component';
 import { FirstScreenComponent } from './first-screen/first-screen.component';
 import { SecondScreenComponent } from './second-screen/second-screen.component';
 import { ThirdScreenComponent } from './third-screen/third-screen.component';
-import { ForthScreenComponent } from './forth-screen/forth-screen.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +13,6 @@ import { ForthScreenComponent } from './forth-screen/forth-screen.component';
     FirstScreenComponent,
     SecondScreenComponent,
     ThirdScreenComponent,
-    ForthScreenComponent
   ],
   imports: [
     BrowserModule,
