@@ -8,8 +8,8 @@ import { Component, OnInit } from '@angular/core';
 export class FirstScreenComponent implements OnInit {
 
   onClick() {
-    var checkBox = document.getElementById("myCheck");
-  var button = document.getElementById("unDisable");
+    var checkBox = <HTMLInputElement>document.getElementById("myCheck");
+    var button = <HTMLInputElement>document.getElementById("unDisable");
   if (checkBox.checked == true){
     button.disabled = false;
   } else {
@@ -18,7 +18,7 @@ export class FirstScreenComponent implements OnInit {
   }
 
 
-  constructor() { 
+  constructor() {
   }
 
   ngOnInit() {
