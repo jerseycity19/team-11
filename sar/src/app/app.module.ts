@@ -7,7 +7,6 @@ import { AppComponent } from './app.component';
 import { FirstScreenComponent } from './first-screen/first-screen.component';
 import { SecondScreenComponent } from './second-screen/second-screen.component';
 import { ThirdScreenComponent } from './third-screen/third-screen.component';
-import { CarouselPageComponent } from './carousel-page/carousel-page.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +14,6 @@ import { CarouselPageComponent } from './carousel-page/carousel-page.component';
     FirstScreenComponent,
     SecondScreenComponent,
     ThirdScreenComponent,
-    CarouselPageComponent,
   ],
   imports: [
     BrowserModule,
