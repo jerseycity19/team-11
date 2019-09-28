@@ -1,12 +1,13 @@
 const MongoClient = require("mongodb").MongoClient;
 
+
 let _connection = undefined;
 let _db = undefined;
 
 const settings = {
     mongoConfig:{
         serverUrl : "mongodb://localhost:27017/",
-        database: "SAR_users"
+        database: "db3"
     }
 };
 
