@@ -2,7 +2,8 @@ const mongoCollections = require("../config/mongoCollections");
 const users = mongoCollections.users;
 let ObjectID = require('mongodb').ObjectID;
 const createCsvWriter = require('csv-writer').createObjectCsvWriter;
-const mkdirp = require('mkdirp');
+const execa = require('execa');
+// var PythonShell = require('python-shell');
 module.exports = {
     create: async function(identify,age,gender, country, language, status, discipline, sensitive){
         const userCollection = await users();
@@ -49,6 +50,18 @@ module.exports = {
             csvWriter.writeRecords(allUsers).then(() =>  {
                 console.log("csv created");
             }); 
+           
+            // let options = {
+            //     pythonPath: '/usr/bin/python3',
+            //     args: ['GENDER']
+            // }
+            // var test = new PythonShell('piechart.py', options);
+            // var spawn = require("child_process").spawn;
+            // var process = spawn('python3', ["/c/Users/dshap/Documents/team-11/express/data/piechart.py", "GENDER"]);
+            // console.log("Stopped")
+            const path = require('path');
+            const abspath = path.dirname(require.main.filename) + '/data/piechart.py'
+            await execa('python3', [abspath, 'GENDER', abspath]);
         }catch(e){
             console.log(e);
         }

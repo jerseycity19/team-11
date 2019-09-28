@@ -13,9 +13,11 @@
     "@angular/cli": "^8.3.6",
     "body-parser": "^1.19.0",
     "create-dir": "^1.0.3",
+    "execa": "^2.0.4",
     "express": "^4.17.1",
     "make-dir": "^3.0.0",
     "mkdirp": "^0.5.1",
-    "mongodb": "^3.3.2"
+    "mongodb": "^3.3.2",
+    "python-shell": "^1.0.8"
   }
 }
