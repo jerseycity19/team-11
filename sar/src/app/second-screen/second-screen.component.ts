@@ -22,6 +22,11 @@ export class SecondScreenComponent implements OnInit {
     console.log("hello");
   }
 
+  onSubmit() {
+    alert("Your response has been securely submitted for further analysis. Thank you for your participation.");
+  }
+
+
   scrollCallback() {
     var docHeight = document.getElementsByClassName("container")[0].scrollHeight;
     var curPos = document.getElementsByClassName("container")[0].scrollTop;
