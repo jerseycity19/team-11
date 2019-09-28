@@ -7,6 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SecondScreenComponent implements OnInit {
 
+  // console.log(document);
+  // (<HTMLInputElement>document).querySelector("input").addEventListener("click", function() {
+  //   alert("Hello, World!");
+  // });
+
+  onClick() {
+    alert("hello, world");
+  }
+
   constructor() { }
 
   ngOnInit() {
