@@ -7,7 +7,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FirstScreenComponent implements OnInit {
 
-  constructor() { }
+  onClick() {
+    var checkBox = <HTMLInputElement>document.getElementById("myCheck");
+    var button = <HTMLInputElement>document.getElementById("unDisable");
+  if (checkBox.checked == true){
+    button.disabled = false;
+  } else {
+    button.disabled = true;
+  }
+  }
+
+
+  constructor() {
+  }
 
   ngOnInit() {
   }
